@@ -39,7 +39,7 @@ html {
     background: #1717172d;
 }
 
-/* Brand name */
+/* name */
 .name {
     color: #f11919;
     font-size: 2.2rem;
@@ -100,7 +100,7 @@ button:hover {
     color: #e6f7ff;
 }
 
-/* Hamburger menu styles */
+/* menu styles */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -182,7 +182,7 @@ button:hover {
 
 @keyframes typing {
     from { width: 0; }
-    to { width: 13ch; } /* Adjust ch for your text length */
+    to { width: 13ch; } 
 }
 
 @keyframes blink {
@@ -245,7 +245,7 @@ button:hover {
     margin-bottom: 1.2rem;
     font-family: 'Montserrat', Arial, sans-serif;
     font-weight: bold;
-    text-align: center; /* added: center the heading */
+    text-align: center; 
     width: 100%;
 }
 
@@ -533,7 +533,7 @@ button:hover {
     text-decoration: underline;
 }
 
-/* Lightbox / modal for certificate preview */
+/*  certificate preview */
 .lightbox {
     display: none;
     position: fixed;
@@ -756,12 +756,12 @@ button:hover {
     font-weight: 600;
     transition: background 0.15s;
     position: relative;
-    z-index: 9999;    /* ensure not covered by overlays */
+    z-index: 9999; 
     pointer-events: auto;
 }
 @media (max-width: 900px) {
     .download-cv {
         position: relative !important;
-        right: 60px !important; /* move right by 60px */
+        right: 60px !important; 
     }
 }
