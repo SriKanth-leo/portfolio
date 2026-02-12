@@ -39,7 +39,11 @@ html {
     background: #1717172d;
 }
 
+<<<<<<< HEAD
 /*  name */
+=======
+/* name */
+>>>>>>> 4c170b93a99d1aeb4908908a0c6f77de0dd417a8
 .name {
     color: #f11919;
     font-size: 2.2rem;
@@ -81,7 +85,30 @@ html {
     background: rgba(0, 191, 255, 0.08);
 }
 
+<<<<<<< HEAD
 /*  menu styles */
+=======
+/* Button style */
+button {
+    background: #00bfff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.3rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 8px rgba(0, 191, 255, 0.08);
+}
+
+button:hover {
+    background: #009acd;
+    color: #e6f7ff;
+}
+
+/* menu styles */
+>>>>>>> 4c170b93a99d1aeb4908908a0c6f77de0dd417a8
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -162,6 +189,7 @@ html {
 }
 
 @keyframes typing {
+<<<<<<< HEAD
     from {
         width: 0;
     }
@@ -169,6 +197,10 @@ html {
     to {
         width: 13ch;
     }
+=======
+    from { width: 0; }
+    to { width: 13ch; } 
+>>>>>>> 4c170b93a99d1aeb4908908a0c6f77de0dd417a8
 }
 
 @keyframes blink {
@@ -233,7 +265,11 @@ html {
     margin-bottom: 1.2rem;
     font-family: 'Montserrat', Arial, sans-serif;
     font-weight: bold;
+<<<<<<< HEAD
     text-align: center;
+=======
+    text-align: center; 
+>>>>>>> 4c170b93a99d1aeb4908908a0c6f77de0dd417a8
     width: 100%;
 }
 
@@ -544,7 +580,11 @@ html {
     text-decoration: underline;
 }
 
+<<<<<<< HEAD
 /* certificate preview */
+=======
+/*  certificate preview */
+>>>>>>> 4c170b93a99d1aeb4908908a0c6f77de0dd417a8
 .lightbox {
     display: none;
     position: fixed;
@@ -785,13 +825,21 @@ html {
     font-weight: 600;
     transition: background 0.15s;
     position: relative;
+<<<<<<< HEAD
     z-index: 9999;
+=======
+    z-index: 9999; 
+>>>>>>> 4c170b93a99d1aeb4908908a0c6f77de0dd417a8
     pointer-events: auto;
 }
 
 @media (max-width: 900px) {
     .download-cv {
         position: relative !important;
+<<<<<<< HEAD
         right: 60px !important;
+=======
+        right: 60px !important; 
+>>>>>>> 4c170b93a99d1aeb4908908a0c6f77de0dd417a8
     }
 }
