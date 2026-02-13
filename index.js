@@ -1,7 +1,25 @@
 const menuToggle = document.getElementById('menu-toggle');
 const navLinks = document.getElementById('nav-links');
+
 menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+    const isOpen = navLinks.classList.toggle('active');
+    menuToggle.setAttribute('aria-expanded', isOpen);
+});
+
+// Close menu when a link is clicked
+document.querySelectorAll('#nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+    });
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+        navLinks.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+    }
 });
 const typingSpan = document.querySelector('.typing');
 const text = "Web Developer";
@@ -15,7 +33,7 @@ function type() {
 }
 type();
 document.addEventListener('DOMContentLoaded', () => {
-    const certLinks = document.querySelectorAll('.cert-link');
+    const certLinks = document.querySelectorAll('.cert-link, .certificate-link');
     const lightbox = document.getElementById('lightbox');
     const lbImg = document.getElementById('lightbox-img');
     const lbClose = document.getElementById('lightbox-close');
@@ -32,7 +50,9 @@ document.addEventListener('DOMContentLoaded', () => {
     certLinks.forEach(a => {
         a.addEventListener('click', e => {
             e.preventDefault();
-            openLightbox(a.href);
+            // use href for anchor tags, or data-src if provided
+            const src = a.href || a.getAttribute('data-src');
+            openLightbox(src);
         });
     });
     lbClose.addEventListener('click', closeLightbox);
