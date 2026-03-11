@@ -22,7 +22,7 @@ document.addEventListener('click', (e) => {
     }
 });
 const typingSpan = document.querySelector('.typing');
-const text = "Web Developer";
+const text = "Frontend Developer";
 let i = 0;
 function type() {
     if (i < text.length) {
